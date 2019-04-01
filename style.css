@@ -1,0 +1,738 @@
+/*START NORMALIZE*/
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+/*END NORMALIZE*/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.uniformPad, .pageList{
+  padding: 0 15%;
+  min-width: 1025px;
+}
+
+a{text-decoration: none;}
+
+ul{list-style-type: none;}
+
+/*RED TEXT*/
+.mainNav p .red, .mainNav__socials li:hover, .mainNav .liveButton i, .latestEps h2 .red, .blog h2 .red, .latestEps .episodeGall a:hover .episodeGall__title, .fullEpisodeMenu .episodeGall a:hover .episodeGall__title, .blog p:last-child, .blog a:hover h4, .subscribe button, .footMenu a, .pageTitle span.red, .map li.current, .pageTitle .liveButton i, .fullEpisodeMenu .donateButton, .formContainer li a  {
+  color: hsla(344,89%,52%,1);
+}
+
+/*RED DESIGN*/
+.featureEp .itunes, .featureEp figcaption, .fullEpisodeMenu .episodeGall a:hover .episodeGall__image h4, .latestEps .episodeGall a:hover .episodeGall__image h4, .entriesGall p:first-child, .formContainer form input[type=submit] {
+  background-color: hsla(344,89%,52%,1);
+}
+
+/*BLACK TEXT*/
+.mainNav a, .latestEps .episodeGall a, .formContainer h3, .formContainer li, .fullEpisodeMenu .pageList li a, .fullEpisodeMenu .episodeGall p, .fullEpisodeMenu .episodeGall h3, .fullEpisodeMenu nav h3, .fullEpisodeMenu nav a:not(.donateButton), .latestEps__moreButton{
+  color: black;
+}
+
+/*OFF-WHITE TEXT*/
+.featureEp h3, h1, a, figcaption, .fullEpisodeMenu .episodeGall a:hover .episodeGall__image h4, .latestEps .episodeGall a:hover .episodeGall__image h4, .blog h2, .blog p:first-child, .blog h4, .entriesGall p:first-child, .footNav {
+  color: hsla(0,0%,96%,1);
+}
+
+/*OFF-WHITE DESIGN*/
+html, .latestEps__moreButton, {background-color: hsla(0,0%,96%,1)}
+
+.latestEps__moreButton:hover {background-color: hsla(0,0%,98%,1)}
+
+/*START MAIN NAV*/
+.mainNav{width: 100%;}
+
+.mainNav .uniformPad {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainNav ul {white-space: nowrap;}
+
+.mainNav .uniformPad div {display: flex;}
+
+.mainNav p {
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.mainNav p .red {
+  font-style: italic;
+  text-transform: lowercase;
+}
+
+.mainNav__pages {padding-left: 30px;}
+
+.mainNav__pages li:hover a {
+  border-bottom: 1px solid black;
+}
+
+.mainNav li, .liveButton {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 2px;
+}
+
+.mainNav li {display: inline-block;}
+
+.mainNav__pages li {margin: 0 7px;}
+
+.mainNav__socials li {padding: 0 5px;}
+
+.mainNav__socials a {color: inherit;}
+
+.mainNav__socials {padding: 0 30px;}
+
+.mainNav .liveButton i {font-size: 0.5rem;}
+
+.mainNav .liveButton {
+  margin-top:9px;
+  line-height: 30px;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  border: 2px solid black;
+}
+/*END MAIN NAV*/
+
+/*START FEATUREEP*/
+.featureEp .uniformPad {
+  display: flex;
+  justify-content: space-between;
+  padding: 5% 15%;
+}
+
+.featureEp figure {
+  margin: 0 0 0 30px;
+  width: 250px;
+}
+
+header {
+  background: url(images/ryan-holloway-273158.png);
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px hsla(0,0%,0%,0.7);
+}
+
+.featureEp h3 {
+  font-family: 'Crimson Text', serif;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.featureEp h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.audio img {align-self: center;}
+
+.audio img:first-child {margin-right: 20px;}
+
+.audio {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.featureEp a, figcaption {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.featureEp a {
+  border-radius: 3px;
+  padding: 3px 30px;
+}
+
+.featureEp .itunes {margin-right: 3%;}
+
+.featureEp .cloud {border: 1px solid hsla(0,0%,98%,1);}
+
+.featureEp .mike  {
+  width: 250px;
+  height: auto;
+  padding-right: 0;
+  border-radius: 3px;
+  box-shadow: 0px -38px 0px -25px hsla(0,0%,100%,0.5), 0px -74px 0px -50px hsla(0,0%,100%,0.25);
+}
+
+.featureEp figure {position: relative;}
+
+.featureEp figcaption {
+  display: inline-block;
+  padding: 3px 30px;
+  position: relative;
+  top: -50px;
+  left: 50%;
+  transform: translate(-50%,0);
+  border-radius: 3px;
+}
+/*END FEATUREDEP*/
+
+/*START LATESTEPS*/
+.latestEps h2, .blog h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 50px 0 10px 0;
+}
+
+.latestEps__border, .blog__border {
+  border-bottom: 2px solid lightgray;
+  border-image-source: linear-gradient(to right, hsla(344,89%,52%,1) 35px, lightgray 35px);
+  border-image-slice: 1;
+  margin-bottom: 30px;
+}
+
+.latestEps h2, .blog h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.latestEps h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17.89px;
+  font-weight: 600;
+}
+
+.episodeGall__title {margin: 20px 0 10px 0;}
+
+.latestEps .episodeGall {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.latestEps .episodeGall__container {width: 23.5%;}
+
+.latestEps .image1 {background: url(images/aneta-ivanova-776.png);}
+.latestEps .image2 {background: url(images/janko-ferlic-308136.png);}
+.latestEps .image3 {background: url(images/larm-rmah-151478.png);}
+.latestEps .image4 {background: url(images/dawid-zawila-279995.png);}
+.latestEps .image5 {background: url(images/jake-davies-339195.png);}
+.latestEps .image6 {background: url(images/pablo-heimplatz-257546.png);}
+.latestEps .image7 {background: url(images/osman-rana-293984.png);}
+.latestEps .image8 {background: url(images/amaury-salas-324505.png);}
+
+.latestEps .episodeGall__image {
+  padding-top: 65.6%;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.latestEps .episodeGall__container p {
+  color: dimgray;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+/*Start 'Listen' transitions on gallery hovers in 'index.html' and 'episodes.html'*/
+.latestEps .episodeGall__image h4, .fullEpisodeMenu .episodeGall__container .episodeGall__image h4 {
+  color: hsla(0,0%,98%,0);
+  font-size: 12px;
+  margin: 0;
+  position: absolute;
+  top: calc(50% - 8.4px);
+  left: calc(50% - 30.75px);
+  border-radius: 3px;
+  padding: 3px 10px;
+}
+
+.latestEps .episodeGall a:hover .episodeGall__title, .fullEpisodeMenu .episodeGall a:hover .episodeGall__title {transition: 0.2s;}
+
+.fullEpisodeMenu .episodeGall a:hover .episodeGall__image h4, .latestEps .episodeGall a:hover .episodeGall__image h4 {transition: 0.2s;}
+/*End 'Listen' transitions on gallery hovers in 'index' and 'episodes'*/
+
+.latestEps__moreButton {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 3px 30px;
+  border: 2px solid black;
+  padding: 10px 30px;
+}
+
+.latestEps .uniformPad div:last-child {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+/*END FEATUREDEPS*/
+
+/*START BLOG*/
+.blog {
+  background: url(images/ryan-holloway-273158X.png);
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px hsla(0,0%,0%,0.7);
+  padding-top: 25px;
+  margin-top: 25px;
+}
+
+.blog p:first-child {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.blog h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.blog p:last-child {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.entriesGall {display: flex;}
+
+.blog a {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.blog a:first-child, .blog a:nth-child(2) {margin-right: 25px;}
+
+.entriesGall p:first-child {
+  display: inline-block;
+  margin: 0;
+  border-radius: 3px;
+  padding: 3px 10px;
+  width: 75px;
+  text-align: center;
+}
+
+.blog {padding-bottom: 70px;}
+/*BLOG END*/
+
+/*START SUBSCRIBE*/
+.subscribe {
+  padding-top: 50px;
+  padding-bottom: 75px;
+}
+
+.subscribe h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.subscribe p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: hsla(203,10%,16%,1);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.subscribe button, .subscribe input {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 10px 30px;
+}
+
+.subscribe input {
+  color: dimgray;
+  border: 1px solid lightgray;
+}
+
+.subscribe button {border: 2px solid hsla(344,89%,52%,1);}
+
+.subscribe form {text-align: center;}
+
+.subscribe button:hover {cursor: pointer;}
+/*END SUBSCRIBE*/
+
+/*START FOOTER*/
+.footer__border {
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 30px;
+}
+
+.footMenu {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.footMenu div:not(:last-child) {margin-right: 9%;}
+
+.footMenu div {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.footMenu h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.footMenu p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: dimgray;
+}
+
+.footMenu div:last-child p {white-space: nowrap;}
+
+.footMenu a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footMenu p .bold {font-weight: 700;}
+
+.footNav {
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footNav p {
+  display: inline-block;
+  margin: 0;
+}
+
+.footNav ul {
+  float: right;
+  display: flex;
+  margin: 0;
+}
+
+.footNav li:not(:last-child) {margin-right: 20px;}
+/*END FOOTER*/
+
+/*START TITLE & MAP*/
+.pageTitle {
+  background: url(images/ryan-holloway-273158.png);
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px hsla(0,0%,0%,0.7);
+}
+
+.pageTitle h1 {
+  padding: 40px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.pageTitle .uniformPad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.map li {
+  display: inline;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pageTitle .liveButton {
+  line-height: 40px;
+  text-align: center;
+  width: 250px;
+  height: 40px;
+  border: 2px solid hsla(0,0%,98%,1);
+}
+
+.map {
+  background-color: white;
+  border-bottom: 1px solid lightgray;
+}
+
+.map ul {
+  margin: 0;
+  padding: 10px 0;
+}
+/*END TITLE & MAP*/
+
+/*START EPISODES PAGE FULL GALLERY SECTION*/
+.fullEpisodeMenu {padding-top: 40px;}
+
+.fullEpisodeMenu .uniformPad {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fullEpisodeMenu .donateButton, .fullEpisodeMenu .categories, .fullEpisodeMenu .archives {background-color: white;}
+
+.fullEpisodeMenu .categories, .fullEpisodeMenu .archives {
+  padding: 2% 6%;
+  border-bottom: 1px solid lightgray;
+}
+
+.fullEpisodeMenu nav h3, .fullEpisodeMenu nav a:not(.donateButton) {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 18px;
+}
+
+.fullEpisodeMenu .episodeGall h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16;
+  font-weight: 400;
+}
+
+.fullEpisodeMenu .episodeGall p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13;
+  font-weight: 400;
+}
+
+.fullEpisodeMenu .donateButton {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: center;
+  border: 2px solid hsla(344,89%,52%,1);
+  white-space: nowrap;
+  height: 40px;
+  display: block;
+  border-radius: 2px;
+}
+
+.fullEpisodeMenu input {
+  width: 100%;
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  border-width: 0px 0px 1px 0px;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 2px;
+  height: 40px;
+  padding-left: 8%;
+}
+
+.fullEpisodeMenu button {
+  display: inline-block;
+  width: 40px;
+  height: 26px;
+  position: relative;
+  right: calc(-100% + 50px);
+  top: -33px;
+  color: dimgray;
+  border: none;
+  background-color: white;
+}
+
+.fullEpisodeMenu button:hover {cursor: pointer;}
+
+.fullEpisodeMenu .donateButton, .fullEpisodeMenu .categories {margin-bottom: 20px;}
+
+.fullEpisodeMenu h3 {
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.fullEpisodeMenu .uniformPad {display: flex;}
+
+.fullEpisodeMenu nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.fullEpisodeMenu nav li:not(:last-child) {margin-bottom: 20px;}
+
+.fullEpisodeMenu nav {
+  width: 25%;
+  min-width: 200px;
+}
+
+.fullEpisodeMenu .episodeGall a {color: black;}
+
+.fullEpisodeMenu .episodeGall p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.fullEpisodeMenu .episodeGall {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 75%;
+  min-width: 489px;
+}
+
+.fullEpisodeMenu .episodeGall__container {width: 31%;}
+
+.fullEpisodeMenu .episodeGall {padding-left: 2%;}
+
+.fullEpisodeMenu .image1 {background: url(images/episodes_images/eric-ward-285931.png);}
+.fullEpisodeMenu .image2 {background: url(images/episodes_images/denys-argyriou-220305.png);}
+.fullEpisodeMenu .image3 {background: url(images/episodes_images/kyle-mills-322958.png);}
+.fullEpisodeMenu .image4 {background: url(images/episodes_images/redd-angelo-11909.png);}
+.fullEpisodeMenu .image5 {background: url(images/episodes_images/pablo-heimplatz-250367.png);}
+.fullEpisodeMenu .image6 {background: url(images/episodes_images/noah-basle-25984.png);}
+.fullEpisodeMenu .image7 {background: url(images/episodes_images/miss-zhang-304051.png);}
+.fullEpisodeMenu .image8 {background: url(images/episodes_images/william-stitt-196787.png);}
+.fullEpisodeMenu .image9 {background: url(images/episodes_images/sonja-langford-89.png);}
+
+.fullEpisodeMenu .episodeGall__image {
+  padding-top: 65.6%;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+}
+
+.fullEpisodeMenu .episodeGall__container h4 {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.fullEpisodeMenu .episodeGall__container p {
+  color: dimgray;
+  font-family: 'Open Sans' sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.fullEpisodeMenu .pageList li{
+  display: inline-block;
+  margin-bottom: 20px;
+  width: 2%;
+}
+
+.fullEpisodeMenu .pageList ul{
+  text-align: center;
+  padding-left: 25%;
+}
+/*END EPISODES PAGE FULL GALLERY SECTION*/
+
+/*START CONTACT*/
+.mapContainer {
+  padding: 15px 0 15px 15px;
+  border-bottom: 1px solid lightgray;
+  border-right: solid 15px white;
+  margin: 30px 0;
+  background-color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+/*for Google Maps Static version*/
+.mapContainer img {
+    width: 640px;
+    height: 307px;
+}
+
+/*for Leaflet version*/
+#mapid {
+    width: 100%;
+    height: 307px;
+}
+
+.formContainer {
+  padding: 2% 6%;
+  height: 300px;
+  border-bottom: 1px solid lightgray;
+  margin: 30px 0;
+  background-color: white;
+  display: flex;
+}
+
+.formContainer form .contactInput, .formContainer form textarea {
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+}
+
+.formContainer form .contactInput {
+  width: 27%;
+  height: 100%;
+  padding-left: 3%;
+}
+
+.topRow {
+  width: 100%;
+  height: 17%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.formContainer form textarea {
+  width: calc(97% - 2px);
+  height: 50%;
+  margin: 2% 0;
+  padding: 3% 0 0 3%;
+  resize: none;
+}
+
+.formContainer form input[type=submit] {
+  color: white;
+  border: none;
+  border-radius: 2px;
+  width: 100%;
+  height: 17%;
+}
+
+.formContainer form input[type=submit]:hover {cursor: pointer;}
+
+.contactDetails {
+  width: 35%;
+  margin-left: 3%;
+}
+
+.formContainer ul {
+  padding-top: 20px;
+  padding-left: 0;
+}
+
+.formContainer h3, .formContainer li {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.formContainer li:not(:first-child) {text-transform: uppercase;}
+
+.formContainer h3 {
+  text-transform: uppercase;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 15px;
+}
+
+.formContainer li {margin-bottom: 15px;}
+
+.formContainer li a {text-transform: lowercase;}
+/*END CONTACT*/
